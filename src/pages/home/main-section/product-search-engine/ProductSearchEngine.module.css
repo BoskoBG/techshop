@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  height: 100%;
+}
+
+/* @media (max-width: 1200px) {
+  .container {
+    display: none;
+  }
+} */

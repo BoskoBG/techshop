@@ -1,0 +1,15 @@
+@import "/src/styles/styles.css";
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* .section-content {
+  margin-top: 25px;
+  width: var(--content-width);
+  display: flex;
+} */

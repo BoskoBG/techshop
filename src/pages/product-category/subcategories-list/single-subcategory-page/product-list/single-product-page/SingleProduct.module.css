@@ -1,0 +1,6 @@
+.page-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 0.67rem;
+}

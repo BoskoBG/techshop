@@ -1,0 +1,65 @@
+@import "/src/styles/styles.css";
+
+.btn {
+  background-color: white;
+  border-radius: var(--radius);
+  padding: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-inactive {
+  color: #868383;
+}
+
+.btn-active {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 15px rgb(27 28 30 / 15%);
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.chevron {
+  margin-top: 3px;
+  color: var(--secondary-color);
+  float: right;
+  z-index: 5;
+  transition: 0.3s ease;
+}
+
+.chevron-active {
+  transform: rotate(-90deg);
+}
+
+.chevron * {
+  display: flex;
+}
+
+.btn-search {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.btn-search:hover {
+  box-shadow: 0 2px 15px rgb(27 28 30 / 50%);
+}
+
+.animate {
+  animation: btnAnimation 0.4s;
+}
+
+@keyframes btnAnimation {
+  0% {
+    box-shadow: none;
+  }
+
+  100% {
+    box-shadow: 0 0 8px 3px rgb(254 203 46 / 50%);
+  }
+}

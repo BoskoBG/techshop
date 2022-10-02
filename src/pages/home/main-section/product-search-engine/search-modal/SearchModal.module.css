@@ -1,0 +1,68 @@
+.modal {
+  position: absolute;
+  left: 370px;
+  width: max-content;
+  background: white;
+  border-radius: 20px;
+  padding: 20px 1rem;
+  padding-right: 50px;
+}
+
+.close-modal {
+  position: fixed;
+  bottom: -150vh;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  padding: 0 12px 12px;
+  transition: bottom 0.3s ease-out;
+  z-index: 10;
+}
+
+.category {
+  background: white;
+}
+
+.brand {
+  top: 120px;
+}
+
+.spec {
+  top: 245px;
+}
+
+.pointer {
+  position: absolute;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+}
+
+.pointer-category {
+  top: 125px;
+}
+
+.pointer-brand {
+  top: 77px;
+}
+
+.pointer-spec {
+  top: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.close-btn > * {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #ffd400;
+  --secondary-color: #222;
+  --tertiary-color: #f5f5f5;
+  --content-width: 80%;
+  --radius: 30px;
+  --shadow: 0 2px 15px rgb(27 28 30 / 15%);
+}

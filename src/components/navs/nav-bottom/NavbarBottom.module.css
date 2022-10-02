@@ -1,0 +1,58 @@
+.navbar {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #f5f5f5;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-center {
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center a {
+  cursor: pointer;
+}
+
+.products {
+  position: relative;
+  width: 35%;
+  height: 100px;
+  text-align: center;
+}
+
+.products p {
+  position: relative;
+  text-align: start;
+  font-weight: bold;
+  margin-left: 50px;
+  top: 20px;
+}
+
+.products p:hover {
+  cursor: pointer;
+}
+
+.products p span {
+  margin-left: 5px;
+  color: var(--secondary-color);
+}
+
+.other {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}

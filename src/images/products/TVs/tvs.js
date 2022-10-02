@@ -1,0 +1,99 @@
+import UE43AU7172UXXHImg1 from "./UE43AU7172UXXH/img-1.webp";
+import UE43AU7172UXXHImg2 from "./UE43AU7172UXXH/img-2.webp";
+import UE43AU7172UXXHImg3 from "./UE43AU7172UXXH/img-3.webp";
+import UE43AU7172UXXHImg4 from "./UE43AU7172UXXH/img-4.webp";
+import UE43AU7172UXXHImg5 from "./UE43AU7172UXXH/img-5.webp";
+import UE43AU7172UXXHImg6 from "./UE43AU7172UXXH/img-6.webp";
+import UE43AU7172UXXHImg7 from "./UE43AU7172UXXH/img-7.webp";
+
+import QE55LS01TAUXXHImg1 from "./QE55LS01TAUXXH/img-1.webp";
+import QE55LS01TAUXXHImg2 from "./QE55LS01TAUXXH/img-2.webp";
+import QE55LS01TAUXXHImg3 from "./QE55LS01TAUXXH/img-3.webp";
+import QE55LS01TAUXXHImg4 from "./QE55LS01TAUXXH/img-4.webp";
+import QE55LS01TAUXXHImg5 from "./QE55LS01TAUXXH/img-5.webp";
+import QE55LS01TAUXXHImg6 from "./QE55LS01TAUXXH/img-6.webp";
+import QE55LS01TAUXXHImg7 from "./QE55LS01TAUXXH/img-7.webp";
+import QE55LS01TAUXXHImg8 from "./QE55LS01TAUXXH/img-8.webp";
+import QE55LS01TAUXXHImg9 from "./QE55LS01TAUXXH/img-9.webp";
+
+import NANO753PAImg1 from "./NANO753PA/img-1.webp";
+import NANO753PAImg2 from "./NANO753PA/img-2.webp";
+import NANO753PAImg3 from "./NANO753PA/img-3.webp";
+import NANO753PAImg4 from "./NANO753PA/img-4.webp";
+import NANO753PAImg5 from "./NANO753PA/img-5.webp";
+
+import UP75003LFAEUImg1 from "./UP75003LFAEU/img-1.webp";
+import UP75003LFAEUImg2 from "./UP75003LFAEU/img-2.webp";
+import UP75003LFAEUImg3 from "./UP75003LFAEU/img-3.webp";
+import UP75003LFAEUImg4 from "./UP75003LFAEU/img-4.webp";
+import UP75003LFAEUImg5 from "./UP75003LFAEU/img-5.webp";
+import UP75003LFAEUImg6 from "./UP75003LFAEU/img-6.webp";
+import UP75003LFAEUImg7 from "./UP75003LFAEU/img-7.webp";
+
+import KD55A8BAEPImg1 from "./KD55A8BAEP/img-1.webp";
+import KD55A8BAEPImg2 from "./KD55A8BAEP/img-2.webp";
+import KD55A8BAEPImg3 from "./KD55A8BAEP/img-3.webp";
+
+import XR50X90JAEPImg1 from "./XR50X90JAEP/img-1.webp";
+import XR50X90JAEPImg2 from "./XR50X90JAEP/img-2.webp";
+import XR50X90JAEPImg3 from "./XR50X90JAEP/img-3.webp";
+import XR50X90JAEPImg4 from "./XR50X90JAEP/img-4.webp";
+import XR50X90JAEPImg5 from "./XR50X90JAEP/img-5.webp";
+import XR50X90JAEPImg6 from "./XR50X90JAEP/img-6.webp";
+import XR50X90JAEPImg7 from "./XR50X90JAEP/img-7.webp";
+
+export const UE43AU7172UXXHimgArr = [
+  UE43AU7172UXXHImg1,
+  UE43AU7172UXXHImg2,
+  UE43AU7172UXXHImg3,
+  UE43AU7172UXXHImg4,
+  UE43AU7172UXXHImg5,
+  UE43AU7172UXXHImg6,
+  UE43AU7172UXXHImg7,
+];
+
+export const QE55LS01TAUXXHimgArr = [
+  QE55LS01TAUXXHImg1,
+  QE55LS01TAUXXHImg2,
+  QE55LS01TAUXXHImg3,
+  QE55LS01TAUXXHImg4,
+  QE55LS01TAUXXHImg5,
+  QE55LS01TAUXXHImg6,
+  QE55LS01TAUXXHImg7,
+  QE55LS01TAUXXHImg8,
+  QE55LS01TAUXXHImg9,
+];
+
+export const NANO753PAimgArr = [
+  NANO753PAImg1,
+  NANO753PAImg2,
+  NANO753PAImg3,
+  NANO753PAImg4,
+  NANO753PAImg5,
+];
+
+export const UP75003LFAEUimgArr = [
+  UP75003LFAEUImg1,
+  UP75003LFAEUImg2,
+  UP75003LFAEUImg3,
+  UP75003LFAEUImg4,
+  UP75003LFAEUImg5,
+  UP75003LFAEUImg6,
+  UP75003LFAEUImg7,
+];
+
+export const KD55A8BAEPimgArr = [
+  KD55A8BAEPImg1,
+  KD55A8BAEPImg2,
+  KD55A8BAEPImg3,
+];
+
+export const XR50X90JAEPimgArr = [
+  XR50X90JAEPImg1,
+  XR50X90JAEPImg2,
+  XR50X90JAEPImg3,
+  XR50X90JAEPImg4,
+  XR50X90JAEPImg5,
+  XR50X90JAEPImg6,
+  XR50X90JAEPImg7,
+];

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.brand {
+  cursor: pointer;
+}
+
+.brand-img {
+  height: 140px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.brand-name {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
