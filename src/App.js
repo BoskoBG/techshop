@@ -13,7 +13,7 @@ import { uiActions } from "./store/ui";
 import { useLocation } from "react-router-dom";
 import MyAccountPage from "./pages/my-account/MyAccountPage";
 import NotFoundPage from "./pages/not-found/NotFoundPage";
-import FavouritesPage from "./pages/favourites/FavouritesPage";
+import FavouritesPage from "./pages/my-account/account-content/pages/favourites/FavouritesPage";
 import {
   useFavHttp,
   useUpdateCurrentUser,
@@ -69,16 +69,12 @@ function App() {
           element={<LoginRegisterPage></LoginRegisterPage>}
         ></Route>
         <Route
-          path="/account"
+          path="/account/*"
           element={<MyAccountPage></MyAccountPage>}
         ></Route>
         <Route
           path="/product-category/:param/*"
           element={<ProductCategoryPage></ProductCategoryPage>}
-        ></Route>
-        <Route
-          path="account/favourites"
-          element={<FavouritesPage></FavouritesPage>}
         ></Route>
         <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
       </Routes>

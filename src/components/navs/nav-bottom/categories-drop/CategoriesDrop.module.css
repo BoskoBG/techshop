@@ -14,16 +14,16 @@
   border-bottom-right-radius: 20px;
 }
 
-li {
+.drop-ul li {
   margin: 20px 0;
   cursor: pointer;
 }
 
-li a {
+.drop-ul li a {
   color: var(--secondary-color);
   text-decoration: none;
 }
 
-li:hover {
+.drop-ul li:hover {
   font-weight: bold;
 }
