@@ -8,7 +8,6 @@ import { useHttp } from "../hooks/useHttp";
 import { authActions } from "../../../store/auth";
 import { cartActions } from "../../../store/cart";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const LoginForm = ({ currentPage, changeCurrentPage }) => {
   const currUser = useSelector((state) => {
@@ -51,7 +50,7 @@ const LoginForm = ({ currentPage, changeCurrentPage }) => {
       const user = data[key];
       users.push(user);
     }
-    // console.log(users);
+    
     const user = users.find((user) => email === user.email);
     return user;
   };

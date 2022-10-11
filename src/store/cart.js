@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialCartState = {
+const initialCartState = JSON.parse(localStorage.getItem("cart")) || {
   products: [],
   totalProductAmount: 0,
   totalPrice: 0,
@@ -29,6 +29,7 @@ const cartSlice = createSlice({
         state.totalProductAmount++;
         state.totalPrice += existingProduct.price;
       }
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     decreaseProductAmount(state, action) {
       if (state.totalProductAmount <= 1) {
@@ -50,6 +51,7 @@ const cartSlice = createSlice({
         state.totalProductAmount--;
         state.totalPrice -= removedProduct.price;
       }
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     removeProductFromCart(state, action) {
       console.log(action.payload);
@@ -61,15 +63,18 @@ const cartSlice = createSlice({
       );
       state.totalProductAmount -= removedProduct.amount;
       state.totalPrice -= removedProduct.price * removedProduct.amount;
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     emptyCart(state) {
       state.products = [];
       state.totalProductAmount = 0;
       state.totalPrice = 0;
       state.readyToBuy = false;
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     setReadyToBuy(state, action) {
       state.readyToBuy = action.payload;
+      localStorage.setItem("cart", JSON.stringify(state));
     },
   },
 });
