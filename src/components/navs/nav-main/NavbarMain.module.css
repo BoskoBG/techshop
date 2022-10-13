@@ -16,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 auto; */
 }
 
 .nav-center * {
@@ -40,19 +39,7 @@
   display: flex;
   align-items: center;
 }
-.nav-links a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
-}
-.nav-links a:hover {
-  color: var(--primary-color);
-}
+
 .logo {
   width: 12rem;
   padding-top: 6px;
@@ -96,25 +83,18 @@
 .icons {
   color: white;
   font-size: 2rem;
+  position: relative;
 }
 
-.icons a {
+.icons .icon {
   color: white;
 }
 
-.icons * {
+.icons .icon {
+  margin: 0 30px;
+}
+
+.icons .icon:hover {
   cursor: pointer;
-  margin: 0 15px;
-}
-
-.icons *:hover {
   color: var(--primary-color);
-}
-
-.nav-bottom {
-  width: var(--content-width);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: red;
 }

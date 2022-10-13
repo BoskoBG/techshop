@@ -7,8 +7,8 @@ import { useCurrentPath } from "../../../components/hooks/useCurrentPath";
 const BreadcrumbNav = () => {
   const currentUser = useCurrentUser();
   const path = useCurrentPath();
-  console.log(path);
   const lastPath = path.split("/account/")[1];
+  const navContent = lastPath && lastPath[0].toUpperCase() + lastPath.slice(1);
 
   return (
     <nav className={classes.nav}>
@@ -24,7 +24,7 @@ const BreadcrumbNav = () => {
       {lastPath && (
         <div>
           <span className={classes.dash}>/</span>
-          <Link to={`/account/${lastPath}`}>{lastPath}</Link>
+          <Link to={`/account/${lastPath}`}>{navContent}</Link>
         </div>
       )}
     </nav>

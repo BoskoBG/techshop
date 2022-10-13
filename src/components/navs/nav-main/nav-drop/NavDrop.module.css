@@ -1,0 +1,68 @@
+.drop-container {
+  position: absolute;
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 85px;
+  left: -80px;
+  z-index: 20;
+  color: var(--secondary-color);
+  font-size: 17px;
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  min-width: 350px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  text-align: start;
+  margin-bottom: 35px;
+}
+
+.header-box .initials {
+  background: var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.list a:hover {
+  font-weight: bold;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.list li .icon {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.list li:last-of-type {
+  margin-bottom: 0;
+}

@@ -22,7 +22,7 @@ const NavbarBottom = () => {
       <div className={classes["nav-center"]}>
         <div className={classes.products} onMouseLeave={closeNavModalHandler}>
           <p onMouseEnter={openNavModalHandler}>
-            Products{" "}
+            Products
             <span>
               <IoIosArrowDown></IoIosArrowDown>
             </span>
