@@ -39,7 +39,7 @@ const SingleProductListItem = (props) => {
       updateCurrentUser("bosko.golubovicc@gmail.com", {
         favorites: favouriteProducts,
       });
-      setBookmarkClasses(classes['bookmark-icon-favourite'])
+      setBookmarkClasses(classes["bookmark-icon-favourite"]);
     } else {
       const isInFavourites = favouriteProducts.some(
         (prod) => prod.productId === product.productId
@@ -57,7 +57,7 @@ const SingleProductListItem = (props) => {
         setBookmarkClasses(classes["bookmark-icon-favourite"]);
       }
 
-      updateCurrentUser("bosko.golubovicc@gmail.com", {
+      updateCurrentUser(currentUser.email, {
         favourites: favouriteProducts,
       });
     }

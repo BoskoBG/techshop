@@ -7,16 +7,18 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import auth, { authActions } from "../../../../store/auth";
 import DropProductItem from "./drop-product-list-item/DropProductItem";
+import { useFavouriteProducts } from "../../../hooks/useFavouriteProducts";
 
 const NavDrop = ({ type, closeDropModal }) => {
-  const user = useCurrentUser();
-  const favouriteProducts = user.favourites;
   const dispatch = useDispatch();
+  const user = useCurrentUser();
+  const favouriteProducts = useFavouriteProducts();
 
   const onLogoutClick = () => {
     dispatch(authActions.logout());
     closeDropModal();
   };
+
   return (
     <div className={classes["drop-container"]}>
       {type === "account" && (
@@ -74,6 +76,7 @@ const NavDrop = ({ type, closeDropModal }) => {
                 name={product.name}
                 price={product.price}
                 key={product.productId}
+                id={product.productId}
               ></DropProductItem>
             ))}
           </div>

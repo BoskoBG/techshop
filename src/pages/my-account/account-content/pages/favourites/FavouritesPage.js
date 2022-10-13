@@ -1,12 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useFavouriteProducts } from "../../../../../components/hooks/useFavouriteProducts";
 import SingleProductListItem from "../../../../../components/products/single-product-li/SingleProductListItem";
-import ProductsList from "../../../../product-category/subcategories-list/single-subcategory-page/product-list/ProductList";
 
 const FavouritesPage = () => {
-  const favouriteProducts = useSelector(
-    (state) => state.auth.currentUser?.favourites
-  );
+  const favouriteProducts = useFavouriteProducts();
 
   console.log(favouriteProducts);
 
@@ -27,7 +24,8 @@ const FavouritesPage = () => {
           ))}
         </div>
       )}
-      {!favouriteProducts && <div>NO FAV PRODUCTS</div>}
+      {!favouriteProducts ||
+        (favouriteProducts.length === 0 && <div>NO FAV PRODUCTS</div>)}
     </div>
   );
 };

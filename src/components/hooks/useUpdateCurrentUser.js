@@ -23,7 +23,6 @@ export const useUpdateCurrentUser = () => {
             body: JSON.stringify({
               ...exactUser,
               ...newInfo,
-           
             }),
           }
         )

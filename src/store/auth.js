@@ -26,11 +26,13 @@ const authSlice = createSlice({
       state.currentUser.favourites = state.currentUser.favourites
         ? [...state.currentUser.favourites, action.payload]
         : [action.payload];
+      localStorage.setItem("auth", JSON.stringify(state));
     },
     removeFromFavourites(state, action) {
       state.currentUser.favourites = state.currentUser.favourites.filter(
         (favProd) => favProd.productId !== action.payload
       );
+      localStorage.setItem("auth", JSON.stringify(state));
     },
   },
 });
